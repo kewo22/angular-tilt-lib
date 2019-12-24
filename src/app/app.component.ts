@@ -9,6 +9,6 @@ export class AppComponent  {
   name = 'Angular';
 
   test(e:any):void{
-    // console.log(e.clientX + ' - ' +e.clientY)
+    console.log((e.clientX - e.target.offsetLeft) + ' - ' + (e.clientY - e.target.offsetTop))
   }
 }
