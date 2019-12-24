@@ -1,0 +1,42 @@
+div.one{
+  background-color: aqua;
+  height: 150px;
+  width: 150px;
+  font-size: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 0 8px 8px #f3f3f3;
+  transition: 0.3s all ease;
+
+
+  margin: 100px;
+
+  will-change: transform;
+  transform: perspective(300px) rotateX(0deg) rotateY(0deg);
+
+}
+
+
+div.one:hover{
+
+  /* transform: perspective(300px) rotateX(-10deg) rotateY(10deg) scale3D(1,1,1); */
+  /* transform: perspective(300px) rotateX(0deg) rotateY(10deg) scale3D(1,1,1); */
+  /* transform: perspective(300px) rotateX(10deg) rotateY(10deg) scale3D(1,1,1); */
+
+  /* transform: perspective(300px) rotateX(10deg) rotateY(-10deg) scale3D(1,1,1); */
+  /* transform: perspective(300px) rotateX(0deg) rotateY(-10deg) scale3D(1,1,1); */
+  /* transform: perspective(300px) rotateX(10deg) rotateY(-10deg) scale3D(1,1,1); */
+
+
+
+  box-shadow: 0 0 12px 12px #f3f3f3;
+
+}
+
+div.one div:hover  {
+  /* transform: scale(1.5) skewX(10deg); */
+  /* transform: rotateY(130deg); */
+}
