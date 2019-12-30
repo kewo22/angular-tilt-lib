@@ -35,8 +35,15 @@ export class AppComponent implements OnInit {
       // console.log("=");
     }
 
-    this.test(e.clientY - e.target.offsetTop);
-    this.test2(e.clientX - e.target.offsetLeft);
+    // this.test(e.clientY - e.target.offsetTop);
+    // this.test2(e.clientX - e.target.offsetLeft);
+
+    console.log(
+      this.test(e.clientY - e.target.offsetTop) +
+        " -- " +
+        this.test2(e.clientX - e.target.offsetLeft)
+    );
+
     // console.log(
     //   e.clientX - e.target.offsetLeft + " - " + (e.clientY - e.target.offsetTop)
     // );
@@ -49,8 +56,8 @@ export class AppComponent implements OnInit {
     const yy = (y / max) * 100;
     const cy = yy / 10;
 
-    return Math.ceil(cy - 10);
     // console.log(cy - 10);
+    return Math.ceil(cy - 10);
   }
 
   test2(varY: number) {
@@ -60,7 +67,7 @@ export class AppComponent implements OnInit {
     const yy = (y / max) * 100;
     const cy = yy / 10;
 
-    return Math.ceil(10 - cy);
     // console.log(10 - cy);
+    return Math.ceil(10 - cy);
   }
 }
