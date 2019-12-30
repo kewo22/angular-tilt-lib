@@ -22,15 +22,19 @@ div.one{
 
 div.one:hover{
 
-  /* transform: perspective(300px) rotateX(-10deg) rotateY(10deg) scale3D(1,1,1); */
-  /* transform: perspective(300px) rotateX(0deg) rotateY(10deg) scale3D(1,1,1); */
-  /* transform: perspective(300px) rotateX(10deg) rotateY(10deg) scale3D(1,1,1); */
 
-  /* transform: perspective(300px) rotateX(10deg) rotateY(-10deg) scale3D(1,1,1); */
-  /* transform: perspective(300px) rotateX(0deg) rotateY(-10deg) scale3D(1,1,1); */
-  /* transform: perspective(300px) rotateX(10deg) rotateY(-10deg) scale3D(1,1,1); */
+  /* transform: perspective(300px) rotateX(10deg) rotateY(0deg) scale3D(1.04,1.04,1.04); */
+  /* transform: perspective(300px) rotateX(-10deg) rotateY(0deg) scale3D(1.04,1.04,1.04); */
 
+  transform: perspective(300px) rotateX(-10deg) rotateY(10deg) scale3D(1.04,1.04,1.04);
+  /* transform: perspective(300px) rotateX(0deg) rotateY(10deg) scale3D(1.04,1.04,1.04); */
+  /* transform: perspective(300px) rotateX(10deg) rotateY(10deg) scale3D(1.04,1.04,1.04); */
 
+  /* transform: perspective(300px) rotateX(-10deg) rotateY(-10deg) scale3D(1.04,1.04,1.04); */
+  /* transform: perspective(300px) rotateX(0deg) rotateY(-10deg) scale3D(1.04,1.04,1.04); */
+  /* transform: perspective(300px) rotateX(10deg) rotateY(-10deg) scale3D(1.04,1.04,1.04); */
+
+  /* transform: perspective(0px) rotateX(0deg) rotateY(0deg) scale3D(1.04,1.04,1.04); */
 
   box-shadow: 0 0 12px 12px #f3f3f3;
 
