@@ -19,34 +19,16 @@ export class AppComponent implements OnInit {
   }
 
   onMouseMove(e: any): void {
-    let x: number = 0,
-      y: number = 0;
-
-    // Checking horizontal movement (X axis)
-    if (e.clientX - e.target.offsetLeft < this.elWidth / 2) {
-      // console.log("Y+");
-    }
-
-    if (e.clientX - e.target.offsetLeft > this.elWidth / 2) {
-      // console.log("Y-");
-    }
-
-    if (e.clientX - e.target.offsetLeft === this.elWidth / 2) {
-      // console.log("=");
-    }
-
-    // this.test(e.clientY - e.target.offsetTop);
-    // this.test2(e.clientX - e.target.offsetLeft);
-
-    console.log(
-      this.test(e.clientY - e.target.offsetTop) +
-        " -- " +
-        this.test2(e.clientX - e.target.offsetLeft)
-    );
-
     // console.log(
-    //   e.clientX - e.target.offsetLeft + " - " + (e.clientY - e.target.offsetTop)
+    //   this.test(e.clientY - e.target.offsetTop) +
+    //     " -- " +
+    //     this.test2(e.clientX - e.target.offsetLeft)
     // );
+
+    let cX: number = this.test(e.clientY - e.target.offsetTop);
+    let cY: number = this.test2(e.clientX - e.target.offsetLeft);
+
+    this.el.style.transform = `perspective(220px) rotateX(${cX}deg) rotateY(${cY}deg)`;
   }
 
   test(varY: number): number {
@@ -56,7 +38,6 @@ export class AppComponent implements OnInit {
     const yy = (y / max) * 100;
     const cy = yy / 10;
 
-    // console.log(cy - 10);
     return Math.ceil(cy - 10);
   }
 
@@ -67,7 +48,10 @@ export class AppComponent implements OnInit {
     const yy = (y / max) * 100;
     const cy = yy / 10;
 
-    // console.log(10 - cy);
     return Math.ceil(10 - cy);
+  }
+
+  onMouseLeave(e: any): void {
+    this.el.style.transform = `perspective(0px) rotateX(0deg) rotateY(0deg)`;
   }
 }
