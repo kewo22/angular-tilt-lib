@@ -9,7 +9,7 @@ div.one{
   justify-content: center;
 
   box-shadow: 0 0 8px 8px #f3f3f3;
-  transition: 0.3s all ease;
+  transition: 0.05s all ease-in-out;
 
 
   margin: 100px;
