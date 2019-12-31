@@ -28,21 +28,21 @@ export class AppComponent implements OnInit {
     let cX: number = this.test(e.clientY - e.target.offsetTop);
     let cY: number = this.test2(e.clientX - e.target.offsetLeft);
 
-    this.el.style.transform = `perspective(220px) rotateX(${cX}deg) rotateY(${cY}deg)`;
+    this.el.style.transform = `perspective(300px) rotateX(${cX}deg) rotateY(${cY}deg)`;
   }
 
   test(varY: number): number {
-    const max = 75;
+    const max = this.elHeight / 2;
     const y = varY; // variable
 
     const yy = (y / max) * 100;
-    const cy = yy / 10;
+    const cy = yy / 5;
 
     return Math.ceil(cy - 10);
   }
 
   test2(varY: number) {
-    const max = 75;
+    const max = this.elWidth / 2;
     const y = varY; // variable
 
     const yy = (y / max) * 100;
